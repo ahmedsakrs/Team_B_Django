@@ -1,0 +1,138 @@
+<body style="background-image: url('images.jfif');">
+<center>
+    <h1>
+        Prosper Loans Completion Prediction
+    </h1>
+</center>
+
+<h3>
+    Enter the following values
+</h3>
+
+<form action="{% url 'result' %}">
+    {% csrf_token %}
+    <center>
+        Revolving Credit Balance <input type="text" required name="Revolving Credit Balance">
+    </center>
+
+    Term <select required name="Term">
+    <option value=12> 12</option>
+    <option value=36> 36</option>
+    <option value=60> 60</option>
+</select>
+
+    <center>
+        Bankcard Utilization <input type="text" required name="Bankcard Utilization">
+    </center>
+
+    Borrower APR <input type="text" required name="Borrower APR">
+
+    <center>
+        Available Bankcard Credit <input type="number" required name="Available Bankcard Credit">
+    </center>
+
+    Estimated Return <input type="text" required name="Estimated Return">
+
+    <center>
+        Trades Never Delinquent <input type="text" required name="Trades Never Delinquent">
+    </center>
+
+    Prosper Rating <select required name="Prosper Rating">
+    <option value=1> 1</option>
+    <option value=2> 2</option>
+    <option value=3> 3</option>
+    <option value=4> 4</option>
+    <option value=5> 5</option>
+    <option value=6> 6</option>
+    <option value=7> 7</option>
+</select>
+
+    <center>
+        Trades Opened Last 6 Months <input type="text" required name="Trades Opened Last 6 Months">
+    </center>
+
+    Prosper Score <select required name="Prosper Score">
+    <option value=1> 1</option>
+    <option value=2> 2</option>
+    <option value=3> 3</option>
+    <option value=4> 4</option>
+    <option value=5> 5</option>
+    <option value=6> 6</option>
+    <option value=7> 7</option>
+    <option value=8> 8</option>
+    <option value=9> 9</option>
+    <option value=10> 10</option>
+    <option value=11> 11</option>
+</select>
+
+    <center>
+        Debt To Income Ratio <input type="text" required name="Debt To Income Ratio">
+    </center>
+
+    Listing Category <select required name="Listing Category">
+    <option value=0> Not Available</option>
+    <option value=1> Debt Consolidation</option>
+    <option value=2> Home Improvement</option>
+    <option value=3> Business</option>
+    <option value=5> Student Use</option>
+    <option value=6> Auto</option>
+    <option value=7> Other</option>
+    <option value=8> Baby&Adoption</option>
+    <option value=9> Boat</option>
+    <option value=10> Cosmetic Procedure</option>
+    <option value=11> Engagement Ring</option>
+    <option value=12> Green Loans</option>
+    <option value=13> Household Expenses</option>
+    <option value=13.5> Large Purchases</option>
+</select>
+
+    <center>
+        Stated Monthly Income <input type="text" required name="Stated Monthly Income">
+    </center>
+
+    Employment Status Duration in Months <input type="number" required name="Employment Status Duration in Months">
+
+    <center>
+        Loan Months Since Origination <input type="number" required name="Loan Months Since Origination">
+    </center>
+
+    Is Borrower Home Owner <select required name="Is Borrower Home Owner">
+    <option value=0> No</option>
+    <option value=1> Yes</option>
+</select>
+
+    <center>
+        Loan Original Amount <input type="number" required name="Loan Original Amount">
+    </center>
+
+    Total Credit Lines Past 7 Years <input type="number" required name="Total Credit Lines Past 7 Years">
+
+    <center>
+        LP Service Fees <input type="text" required name="LP Service Fees">
+    </center>
+
+    Open Revolving Accounts <input type="text" required name="Open Revolving Accounts">
+
+    <center>
+        Investors <input type="number" required name="Investors">
+    </center>
+
+    Open Revolving Monthly Payment <input type="number" required name="Open Revolving Monthly Payment">
+
+    <center>
+        Credit Score <input type="text" required name="Credit Score">
+    </center>
+
+    Inquiries Last 6 Months <input type="number" required name="Inquiries Last 6 Months">
+
+    <center>
+        Delinquencies Last 7 Years <input type="number" required name="Delinquencies Last 7 Years">
+    </center>
+
+    Total Inquiries <input type="number" required name="Total Inquiries"><br><br>
+
+    <input type="submit" name="" value="submit">
+
+</form>
+</body>
+
